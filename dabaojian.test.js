@@ -19,3 +19,7 @@ test('保健2-500元', () => {
 test('123', () => {
   expect(baojian2(10000)).toBe('双人服务')
 })
+
+test('345', () => {
+  expect(baojian1(100000)).toBe('至尊享受')
+})
