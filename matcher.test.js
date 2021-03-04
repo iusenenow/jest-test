@@ -16,3 +16,33 @@ test('toBeNull测试', () => {
   const a = null
   expect(a).toBeNull()
 })
+
+test('toBeUndefined', () => {
+  const a = undefined
+  expect(a).toBeUndefined()
+})
+
+test('toBeDefined', () => {
+  const a = 'Teresa'
+  expect(a).toBeDefined()
+})
+
+test('toBeTruthy', () => {
+  const a = 99
+  expect(a).toBeTruthy()
+})
+
+test('toBeFalsy', () => {
+  const a = false
+  expect(a).toBeFalsy()
+})
+
+test('toBeGreaterThan', () => {
+  const a = 10
+  expect(a).toBeGreaterThan(8)
+})
+
+test('toBeLessThan', () => {
+  const a = 10
+  expect(a).toBeLessThan(20)
+})
