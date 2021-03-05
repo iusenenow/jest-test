@@ -46,3 +46,13 @@ test('toBeLessThan', () => {
   const a = 10
   expect(a).toBeLessThan(20)
 })
+
+test('toBeGreaterThanOrEqual', () => {
+  const a = 10
+  expect(a).toBeGreaterThanOrEqual(10)
+})
+
+test('toBeLessThanOrEqual', () => {
+  const a = 10
+  expect(a).toBeLessThanOrEqual(10)
+})
