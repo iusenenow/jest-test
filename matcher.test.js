@@ -56,3 +56,19 @@ test('toBeLessThanOrEqual', () => {
   const a = 10
   expect(a).toBeLessThanOrEqual(10)
 })
+
+test('toBeCloseTo', () => {
+  const a = 0.1
+  const b = 0.2
+  expect(a + b).toBeCloseTo(0.3)
+})
+
+test('toMatch', () => {
+  const str = "谢大脚、刘英、小红"
+  expect(str).toMatch('谢大脚')
+})
+
+test('toMatch', () => {
+  const str = "谢大脚、刘英、小红"
+  expect(str).toMatch(/谢大脚/)
+})
