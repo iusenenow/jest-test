@@ -72,3 +72,23 @@ test('toMatch', () => {
   const str = "谢大脚、刘英、小红"
   expect(str).toMatch(/谢大脚/)
 })
+
+test('toContain', () => {
+  const arr = ["谢大脚", "刘英", "小红"]
+  expect(arr).toContain("小红")
+})
+
+const throwNewErrorFunc = () => {
+  throw new Error('this is a new error')
+}
+
+test('toThrow', () => {
+  expect(throwNewErrorFunc).toThrow('this is a new error')
+})
+
+const normalFunc = () => {
+  return 'this is a new error'
+}
+test('not.toThrow', () => {
+  expect(normalFunc).not.toThrow()
+})
