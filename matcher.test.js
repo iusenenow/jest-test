@@ -81,7 +81,6 @@ test('toContain', () => {
 const throwNewErrorFunc = () => {
   throw new Error('this is a new error')
 }
-
 test('toThrow', () => {
   expect(throwNewErrorFunc).toThrow('this is a new error')
 })
@@ -92,3 +91,4 @@ const normalFunc = () => {
 test('not.toThrow', () => {
   expect(normalFunc).not.toThrow()
 })
+

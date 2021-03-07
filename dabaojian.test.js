@@ -1,4 +1,4 @@
-const { baojian1, baojian2 } = require('./dabaojian')
+import { baojian1, baojian2 } from './dabaojian';
 
 test('保健1方法-300元', () => {
   expect(baojian1(300)).toBe('至尊享受')
