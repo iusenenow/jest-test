@@ -1,4 +1,4 @@
-import { fetchData } from './fetchData';
+import { fetchData, fetchTwoData } from './fetchData';
 
 test('fetchData', done => {
   fetchData(data => {
@@ -10,4 +10,14 @@ test('fetchData', done => {
     })
     done()
   })
+})
+
+test('fetchTwoData', async () => {
+  const { data } = await fetchTwoData()
+  expect(data).toEqual({
+    "userId": 1,
+    "id": 1,
+    "title": "delectus aut autem",
+    "completed": false
+  });
 })

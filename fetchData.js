@@ -5,3 +5,7 @@ export const fetchData = fn => {
     fn(response.data)
   })
 }
+
+export const fetchTwoData = () => {
+  return axios.get('https://jsonplaceholder.typicode.com/todos/1')
+}
