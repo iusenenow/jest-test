@@ -21,3 +21,11 @@ test('fetchTwoData', async () => {
     "completed": false
   });
 })
+
+test('FetchTwoData', () => {
+  return fetchTwoData().then((response) => {
+    expect(response.data).toEqual({
+      success: true
+    })
+  })
+})
